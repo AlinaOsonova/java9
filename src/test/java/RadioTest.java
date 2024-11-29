@@ -171,6 +171,16 @@ public class RadioTest {
         int actual = radio.getCurrentNumber();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void test19() {
+        Radio radio = new Radio( 10);
+        radio.setCurrentNumber(9);
+        int expected = 9;
+        int actual = radio.getCurrentNumber();
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
 
 
